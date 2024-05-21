@@ -1,0 +1,36 @@
+# Simplified Chinese translation for xfonts-wqy debconf msg.
+# Copyright (C) 2006 Carlos Z.F. Liu
+# This file is distributed under the same license as the xfonts-wqy package.
+# Carlos Z.F. Liu <carlosliu@users.sourceforge.net>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfonts-wqy 0.7.0-5-2\n"
+"Report-Msgid-Bugs-To: carlosliu@users.sourceforge.net\n"
+"POT-Creation-Date: 2006-07-15 01:12+0100\n"
+"PO-Revision-Date: 2009-04-30 14:21+0800\n"
+"Last-Translator: Andrew Lee <andrew@linux.org.tw>\n"
+"Language-Team: Debian Chinese <debian-chinese-big5@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Enable WenQuanYi font in fontconfig?"
+msgstr "在 fontconfig 中使用文泉驛字體嗎？"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"By default, bitmapped fonts are disabled in fontconfig setting because they "
+"are often lower quality. Enabling this option will bypass the system wide "
+"fontconfig setting and allow applications to use WenQuanYi font without "
+"affecting other bitmapped fonts."
+msgstr ""
+"由於點陣字體的顯示品質較差，fontconfig 的預設配置關閉對此的支援。透過開啟此選"
+"項，您將能在不影響其它點陣字體的情況下，跳過 fontconfig 的系統性配置讓應用程"
+"式能使用文泉驛字體。"

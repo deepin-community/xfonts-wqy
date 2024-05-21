@@ -1,0 +1,8 @@
+Template: xfonts-wqy/enable_wqy
+Type: boolean
+Default: true
+_Description: Enable WenQuanYi font in fontconfig?
+ By default, bitmapped fonts are disabled in fontconfig setting because
+ they are often lower quality. Enabling this option will bypass the
+ system wide fontconfig setting and allow applications to use WenQuanYi
+ font without affecting other bitmapped fonts.

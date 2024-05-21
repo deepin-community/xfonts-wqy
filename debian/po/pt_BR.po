@@ -1,0 +1,39 @@
+# Debconf translations for xfonts-wqy.
+# Copyright (C) 2012 THE xfonts-wqy'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the xfont-wqy package.
+# José dos Santos Júnior <dgjunior4@hotmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfonts-wqy 0.9.9-5\n"
+"Report-Msgid-Bugs-To: carlosliu@users.sourceforge.net\n"
+"POT-Creation-Date: 2006-07-15 01:12+0100\n"
+"PO-Revision-Date: 2012-03-04 13:58-0300\n"
+"Last-Translator: J.S.Júnior <dgjunior4@hotmail.com>\n"
+"Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
+"org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Enable WenQuanYi font in fontconfig?"
+msgstr "Habilitar a fonte WenQuanYi no fontconfig?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"By default, bitmapped fonts are disabled in fontconfig setting because they "
+"are often lower quality. Enabling this option will bypass the system wide "
+"fontconfig setting and allow applications to use WenQuanYi font without "
+"affecting other bitmapped fonts."
+msgstr ""
+"Por padrão, as fontes \"bitmapped\" são desabilitadas na configuração do "
+"fontconfig, porque muitas vezes são de qualidade inferior. Habilitar essa "
+"opção ignorará a configuração do fontconfig válida para todo o sistema e "
+"permitirá que os aplicativos usem a fonte WenQuanYi sem afetar outras fontes "
+"\"bitmapped\"."
