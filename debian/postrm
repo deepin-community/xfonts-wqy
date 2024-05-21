@@ -1,0 +1,16 @@
+#! /bin/sh
+set -e
+
+CONFAVAIL=/etc/fonts/conf.avail
+CONFDIR=/etc/fonts/conf.d
+
+wqy_conf="85-xfonts-wqy-1.conf"
+
+case "$1" in
+    purge)
+        rm $CONFDIR/$wqy_conf 2>/dev/null || true
+        rm $CONFAVAIL/$wqy_conf 2>/dev/null || true
+        ;;
+esac
+
+#DEBHELPER#

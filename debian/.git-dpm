@@ -1,0 +1,11 @@
+# see git-dpm(1) from git-dpm package
+c26de6f298c6e289aac3d3c0933bcf7f84ee8a4a
+c26de6f298c6e289aac3d3c0933bcf7f84ee8a4a
+d0790d39d510d816aec97e3f7793422753ec7b0e
+d0790d39d510d816aec97e3f7793422753ec7b0e
+xfonts-wqy_1.0.0~rc1.orig.tar.gz
+2284df6b35879f5757a61272322fc4473269c9d6
+4092629
+debianTag="debian/%f%v"
+patchedTag="patched/%f%v"
+upstreamTag="upstream/%u"

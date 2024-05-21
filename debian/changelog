@@ -1,5 +1,321 @@
-template-repository (1.0-1) unstable; urgency=medium
+xfonts-wqy (1.0.0~rc1-8) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Use secure URI in debian/watch.
+  * Fix field name typo in debian/copyright (Comments => Comment).
+  * Fix day-of-week for changelog entries 0.9.9-3, 0.7.0-6-1.1.
+  * Update standards version to 4.6.1, no changes needed.
+
+  [ xiao sheng wen(肖盛文) ]
+  * d/copyright: fix typo in Upstream-Name, remove redundancy name in Copyright field.
+
+ -- Bastian Germann <bage@debian.org>  Wed, 04 Oct 2023 17:33:58 +0200
+
+xfonts-wqy (1.0.0~rc1-7) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Boyuan Yang ]
+  * Bump debhelper compat to v13.
+  * Bump Standards-Version to 4.5.1.
+  * debian/rules: Remove custom dh_builddeb override.
+  * debian/compat: Dropped, useless now.
+  * debian/control: Remove Christian Perrier from uploaders list.
+    (Closes: #927595)
+  * debian/control: Replace explicit versioned dpkg pre-depends with
+    ${misc:Pre-Depends}.
+  * debian/control: Mark binary package as Multi-Arch: foreign.
+  * debian/po: Convert all files to UTF-8 encoding.
+  * debian/changelog: Remove trailing spaces.
+  * debian/copyright: Use secure URI in Format field.
+  * debian/postinst: Remove custom invocation to fc-cache. This is
+    now automatically handled by fontconfig trigger.
+
+  [ Hideki Yamane ]
+  * debian/control
+    - drop Suggests: xfs, removed from repository
+      see http://bugs.debian.org/733958
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 20 Jan 2021 13:12:33 -0500
+
+xfonts-wqy (1.0.0~rc1-6) unstable; urgency=medium
+
+  * Remove configure files correctly when purge (Closes: #858959).
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Wed, 29 Mar 2017 11:11:38 +0800
+
+xfonts-wqy (1.0.0~rc1-5) unstable; urgency=medium
+
+  * Fix wrong config file symlink (Closes: #858471).
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Thu, 23 Mar 2017 09:25:56 +0800
+
+xfonts-wqy (1.0.0~rc1-4) unstable; urgency=medium
+
+  * Rename /etc/fonts/conf.avail/85-xfonts-wqy.conf to fix wrongly placed
+    config file without removing it unconditional.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Fri, 20 Jan 2017 11:52:21 +0800
+
+xfonts-wqy (1.0.0~rc1-3) unstable; urgency=medium
+
+  * Rename /etc/X11/fonts/misc/xfonts-wqy.alias to fix wrongly placed
+    fonts.alias file (Closes: #737167).
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Wed, 18 Jan 2017 23:44:24 +0800
+
+xfonts-wqy (1.0.0~rc1-2) unstable; urgency=medium
+
+  * Fix missing @ in bdfmerge.pl (Closes: #808850).
+    Thanks to Paul Hardy, Matt Kraai.
+  * Bump Standards-Version to 3.9.8.
+  * Update Vcs-* fields.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Mon, 02 Jan 2017 02:03:42 +0800
+
+xfonts-wqy (1.0.0~rc1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 3.9.6.
+  * Use copyright-format 1.0.
+  * Fix wrong configuration file.
+  * Update watch.
+  * Remove patches.
+  * Add ChangZhuo Chen as Uploaders.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sun, 22 Nov 2015 21:56:25 +0800
+
+xfonts-wqy (0.9.9-8) unstable; urgency=medium
+
+  * Team upload.
+  * debian/po
+    - add Brazilian Portuguese Translation (Closes: #671739)
+      Thanks to José dos Santos Júnior <dgjunior4@hotmail.com>
+  * debian/preinst
+    - fix /etc/X11/fonts/misc/xfonts-wqy.alias issue not fully fixed in
+      0.9.9-7 (Closes: #734263)
+  * debian/postinst
+    - remove bogus backup directory genreated by above preinst
+  * debian/control
+    - add Pre-Depends: dpkg to support dpkg-maintscript-helper in preinst
+    - set Standards-Version: 3.9.5
+
+ -- Hideki Yamane <henrich@debian.org>  Sun, 19 Jan 2014 02:35:06 +0900
+
+xfonts-wqy (0.9.9-7) unstable; urgency=low
+
+  * Drop removed conffile handling from preinst
+  * Drop wrongly placed fonts.alias file introduced in 0.9.9-5
+    Closes: #722299
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 29 Sep 2013 22:21:10 +0200
+
+xfonts-wqy (0.9.9-6) unstable; urgency=low
+
+  * Use dh_install properly to install the fonts.alias file
+    Rename the file after it is installed. Closes: #722299
+  * Rebuild the original tarball with xz compression to save
+    (a lot of) space
+  * Use xz extreme compression for deb packages
+  * Use git for packaging: adapt Vcs-* fields
+  * Bump debhelper compatibility to 9
+  * Update Standards to 3.9.4
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 26 Sep 2013 19:15:31 +0200
+
+xfonts-wqy (0.9.9-5) unstable; urgency=low
+
+  * Adopt package in the pkg-fonts team. Closes: #476130
+  * Use quilt for patches
+  * Bump debhelper compatibility to 8
+  * Use dh7-style minimal rules file
+  * Updates Standards to 3.9.2 (checked)
+  * Fix ascent and descent. Thanks to Lingzhu Xiang for
+    the patch. Closes: #657295
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 28 Jan 2012 14:21:56 +0100
+
+xfonts-wqy (0.9.9-4) unstable; urgency=low
+
+  * QA upload
+  * Set Debian QA Group as maintainer
+  * Package modernization:
+    - Change section to fonts
+    - Add build-arch and build-indep build targets
+    - Use 3.0 source format
+  * Debconf translations:
+    - Danish (Joe Hansen).  Closes: #628215
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 31 Dec 2011 20:30:46 +0100
+
+xfonts-wqy (0.9.9-3.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Anthony Fok moved to Maintainer: with his agreement
+  * Fix pending l10n issues. Debconf translations:
+    - Vietnamese (Clytie Siddall).  Closes: #515879
+    - Traditional Chinese (Andrew Lee).  Closes: #526255
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 06 Oct 2009 22:31:04 +0200
+
+xfonts-wqy (0.9.9-3.1) unstable; urgency=low
+
+  * Non-maintainer upload to fix pending l10n issues.
+  * Debconf translations:
+    - Galician. Closes: #481747
+    - Russian. Closes: #494454
+    - Spanish. Closes: #494459
+    - Japanese. Closes: #495230
+    - Finnish. Closes: #495276
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 17 Aug 2008 11:26:13 -0300
+
+xfonts-wqy (0.9.9-3) unstable; urgency=low
+
+  [ Deng Xiyue <manphiz-guest@users.alioth.debian.org> ]
+  * Move old conffile handling from postinst script to preinst script.
+    Also check if the conffile is locally modified.  If it is, back it up
+    and tell the user to review the local changes and add it to the new
+    conffile instead of just delete it. Thanks Ming Hua. (Closes: #457423)
+  * Add watch file.
+  * Modify upstream conffile by stripping the force priority part to meet
+    debconf question. (Closes: #456376)
+  * Use upstream alias file, remove debian/xfonts-wqy.alias.
+
+  [ Cai Qian <caiqian@debian.org> ]
+  * New maintainer.
+  * debian/patch/conf.patch:
+    - deal with #456376.
+  * README, AUTHOR:
+    - keeped them as upstream. Have no idea why it has been modified
+      before.
+
+ -- Cai Qian <caiqian@debian.org>  Mon, 11 Feb 2008 00:27:00 +0800
+
+xfonts-wqy (0.9.9-2) unstable; urgency=low
+
+  * Brown paper bag bug; rename /etc/fonts/conf.avail/85-xfonts-wqy.alias
+    to /etc/fonts/conf.avail/85-xfonts-wqy.conf
+  * debian/config, debian/postinst:
+    - Deal with the transition from 70-debconf-wqy.conf to 85-xfonts-wqy.conf
+    - Clean up the old wqy.conf and the erroneous 85-xfonts-wqy.alias
+  * debian/po/it.po:
+    - Added a final newline to suppress warning during package build.
+
+ -- Anthony Fok <foka@debian.org>  Wed, 12 Dec 2007 07:08:54 +0800
+
+xfonts-wqy (0.9.9-1) unstable; urgency=low
+
+  [ Deng Xiyue <manphiz@gmail.com> ]
+  * New upstream release (Closes: #429901)
+  * debian/rules:
+    - Don't compress fonts, for better performance (Closes: #384149)
+
+  [ Kov Chai <tchaikov@gmail.com> ]
+  * debian/rules:
+    - drop fontconvert.sh
+    - use upstream's Makefile
+  * debian/copyright:
+    - update copyright holder
+  * Debconf templates translations:
+    - German added. Closes: #408862
+    - Portuguese added. Closes: #426454
+    - Italian added. Closes: #427207
+
+  [ Anthony Fok ]
+  * Since Carlos is MIA, I am adding myself as an uploader in order to
+    incorporate FangQ, manphiz and tchaikov's great work into Debian and
+    beyond.  :-)
+  * debian/control:
+    - Standards-Version: 3.7.3
+    - Extended package description based on FangQ's own words (with some
+      revisions.)
+    - Use the new Homepage field.
+  * debian/copyright:
+    - Refers to /usr/share/common-licenses/GPL-2 specifically
+      because now "GPL" symlinks to "GPL-3".
+    - Noted "GPL version 2 only" and "font embedding exception".
+      Thanks to Ming Hua for reminder!
+
+ -- Anthony Fok <foka@debian.org>  Wed, 12 Dec 2007 05:35:43 +0800
+
+xfonts-wqy (0.7.0-6-1.2) unstable; urgency=low
+
+  * Non-maintainer upload to fix longstanding l10n issues
+  * Debconf templates translations:
+    - Swedish added. Closes: #387511
+    - French added. Closes: #378503
+    - Czech added. Closes: #382929
+    - Dutch added. Closes: #382941
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 18 Jan 2007 20:38:41 +0100
+
+xfonts-wqy (0.7.0-6-1.1) unstable; urgency=low
+
+  * NMU
+  * Build against new version of debhelper (Closes: #378007)
+
+ -- Cai Qian <caiqian@debian.org>  Mon, 17 Jul 2006 22:13:50 +0100
+
+xfonts-wqy (0.7.0-6-1) unstable; urgency=low
+
+  * Newest upstream is 0.7.0-4, higher number to avoid package
+    version conflict.
+  * Acknowledge NMU, thanks Cai Qian.
+  * Revert back to bdf source package, and bring fontconvert
+    script and xutils dependency back.
+  * Use debconf to switch xfonts-wqy in fontconfig.
+  * Add gbk encoding alias to avoid slowness in wine app, thanks
+    Huang Jiahua.
+  * debian/compat : move DH_COMPAT out of rules.
+
+ -- Carlos Z.F. Liu <carlosliu@users.sourceforge.net>  Mon,  3 Jul 2006 20:00:45 +1200
+
+xfonts-wqy (0.7.0-5-1) unstable; urgency=low
+
+  * Upload PCF version (Closes: #370708)
+
+ -- Cai Qian <caiqian@debian.org>  Sat, 10 Jun 2006 22:13:50 +0100
+
+xfonts-wqy (0.7.0-4-1) unstable; urgency=low
+
+  * New upstream release (Closes: #369184)
+  * Depends on DH 5.0.31, and xfonts-utils. Change installed font
+    path. (Closes: #362405)
+  * build depends on debhelper, as we have the clean target.
+  * Drop override file, fontconvert script and xutils dependency.
+  * Add Co-Maintainer
+
+ -- Cai Qian <caiqian@debian.org>  Mon, 29 May 2006 13:02:08 +0100
+
+xfonts-wqy (0.6.0-1) unstable; urgency=low
+
+  * New upstream release
+  * First official Debian package. (Closes: #315851)
+  * Drop the ptSz patch. The problem was fixed in upstream
+  * debian/xfonts-wqy.overrides:
+    - prevent lintian's "packages-installs-file-to-usr-x11r6" error
+  * debian/copyright:
+    - change to new FSF address.
+
+ -- Carlos Z.F. Liu <carlosliu@users.sourceforge.net>  Tue,  4 Oct 2005 23:29:42 +1300
+
+xfonts-wqy (0.5.0-3) unstable; urgency=low
+
+  * debian/control : build depend on xutils (>> 4.0.3)
+
+ -- Carlos Z.F. Liu <carlosliu@users.sourceforge.net>  Thu,  7 Jul 2005 01:20:09 +1200
+
+xfonts-wqy (0.5.0-2) unstable; urgency=low
+
+  * Fix wrong ptSz setting for 9, 10 and 11 pt.
+
+ -- Carlos Z.F. Liu <carlosliu@users.sourceforge.net>  Wed, 29 Jun 2005 00:45:21 +1200
+
+xfonts-wqy (0.5.0-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Carlos Z.F. Liu <carlosliu@users.sourceforge.net>  Mon, 27 Jun 2005 01:42:03 +1200

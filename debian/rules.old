@@ -1,0 +1,55 @@
+#! /usr/bin/make -f
+
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
+build-stamp:
+	dh_testdir
+	$(MAKE) wqyv1
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_clean
+
+	chmod +w debian/po/*.po
+	debconf-updatepo
+
+	rm -f build-stamp
+	$(MAKE) clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean
+	dh_installdirs
+
+	install -p -D -m644 $(CURDIR)/*.pcf \
+		$(CURDIR)/debian/xfonts-wqy/usr/share/fonts/X11/misc/
+
+	install -p -m644 $(CURDIR)/fonts.alias \
+		$(CURDIR)/debian/xfonts-wqy/etc/X11/fonts/misc/xfonts-wqy.alias
+
+	install -p -m644 $(CURDIR)/85-wqy-bitmapsong.conf \
+		$(CURDIR)/debian/xfonts-wqy/etc/fonts/conf.avail/85-xfonts-wqy.conf
+
+binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installdocs
+	dh_installchangelogs ChangeLog
+	dh_installxfonts
+	dh_installdebconf
+	dh_compress -Xpcf
+	dh_fixperms
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary-arch: build install
+
+binary: binary-indep binary-arch
+
+.PHONY: build clean install binary binary-indep binary-arch

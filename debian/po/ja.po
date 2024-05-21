@@ -1,0 +1,37 @@
+# Copyright (C) 2008 Cai Qian <caiqian@debian.org>
+# as xfonts-wqy Debian package's copyright holder. 
+# This file is distributed under the same license as the xfonts-wqy package.
+# Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfonts-wqy 0.9.9-3\n"
+"Report-Msgid-Bugs-To: carlosliu@users.sourceforge.net\n"
+"POT-Creation-Date: 2006-07-15 01:12+0100\n"
+"PO-Revision-Date: 2008-08-05 10:05+0900\n"
+"Last-Translator: Hideki Yamane (Debian-JP) <henrich@debian.or.jp>\n"
+"Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Enable WenQuanYi font in fontconfig?"
+msgstr "Wen Quan Yi フォントを fontconfig で有効にしますか?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"By default, bitmapped fonts are disabled in fontconfig setting because they "
+"are often lower quality. Enabling this option will bypass the system wide "
+"fontconfig setting and allow applications to use WenQuanYi font without "
+"affecting other bitmapped fonts."
+msgstr ""
+"fontconfig の設定では、大抵の場合は品質が落ちてしまうため、デフォルトではビッ"
+"トマップフォントを無効にしています。このオプションを有効にするとシステム全体"
+"での fontconfig 設定を無視して、他のビットマップフォントを有効にせず、アプリ"
+"ケーションが Wen Quan Yi フォントを使えるようになります。"

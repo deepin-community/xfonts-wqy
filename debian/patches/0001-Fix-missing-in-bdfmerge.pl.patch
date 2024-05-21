@@ -1,0 +1,23 @@
+From c26de6f298c6e289aac3d3c0933bcf7f84ee8a4a Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?ChangZhuo=20Chen=20=28=E9=99=B3=E6=98=8C=E5=80=AC=29?=
+ <czchen@debian.org>
+Date: Mon, 2 Jan 2017 01:56:17 +0800
+Subject: Fix missing @ in bdfmerge.pl
+
+---
+ bdfmerge.pl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/bdfmerge.pl b/bdfmerge.pl
+index a46107a..db14080 100755
+--- a/bdfmerge.pl
++++ b/bdfmerge.pl
+@@ -32,7 +32,7 @@ while(@ARGV>=1&& $ARGV[0]=~/^-{0,1}0[xX]([0-9A-Fa-f]{0,6})/)
+ {
+ 	$startpos = hex($1);
+ 	$endpos=0;
+-	$range=shift(ARGV);
++	$range=shift(@ARGV);
+ 	if($range=~/--0[xX]([0-9A-Fa-f]{0,6})/)
+ 	{
+ 		$endpos=hex($1);

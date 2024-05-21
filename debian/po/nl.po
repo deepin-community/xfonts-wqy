@@ -1,0 +1,51 @@
+# translation of xfonts-wqy_0.7.0-6-1.1_templates.po to debian-l10n-dutch
+# This file is distributed under the same license as the xfonts-wqy package.
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
+#    Developers do not need to manually edit POT or PO files.
+#
+# Kurt De Bree <kdebree@telenet.be>, 2006
+# This is an unofficial translation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfonts-wqy_0.7.0-6-1.1_nl\n"
+"Report-Msgid-Bugs-To: carlosliu@users.sourceforge.net\n"
+"POT-Creation-Date: 2006-07-15 01:12+0100\n"
+"PO-Revision-Date: 2006-08-07 17:50+0200\n"
+"Last-Translator: Kurt De Bree <kdebree@telenet.be>\n"
+"Language-Team: debian-l10n-dutch <debian-l10n-dutch@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Enable WenQuanYi font in fontconfig?"
+msgstr "WenQuanYi lettertype in fontconfig activeren?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"By default, bitmapped fonts are disabled in fontconfig setting because they "
+"are often lower quality. Enabling this option will bypass the system wide "
+"fontconfig setting and allow applications to use WenQuanYi font without "
+"affecting other bitmapped fonts."
+msgstr ""
+"Standaard zijn bitmap-lettertypen in fontconfig niet geactiveerd, daar deze "
+"vaak van een lagere kwaliteit zijn. Door deze optie te activeren zal de "
+"systeemwijde lettertypeconfiguratie worden omzeild en toepassingen het "
+"gebruik van het WenQuanYi lettertype toelaten zonder de andere bitmap-"
+"lettertypen te beïnvloeden."

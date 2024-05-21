@@ -1,0 +1,38 @@
+# Vietnamese translation for X Fonts WQY.
+# Copyright © 2009 Free Software Foundation, Inc.
+# Clytie Siddall <clytie@riverland.net.au>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfonts-wqy 0.9.9-3.1\n"
+"Report-Msgid-Bugs-To: carlosliu@users.sourceforge.net\n"
+"POT-Creation-Date: 2006-07-15 01:12+0100\n"
+"PO-Revision-Date: 2009-02-18 16:18+1030\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.8\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Enable WenQuanYi font in fontconfig?"
+msgstr "Bật phông chữ WenQuanYi trong fontconfig ?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"By default, bitmapped fonts are disabled in fontconfig setting because they "
+"are often lower quality. Enabling this option will bypass the system wide "
+"fontconfig setting and allow applications to use WenQuanYi font without "
+"affecting other bitmapped fonts."
+msgstr ""
+"Mặc định là các phông chữ mẫu ảnh bị tắt trong tập tin cấu hình phông "
+"fontconfig, vì chúng thường có ít chất lượng hơn. Vậy bật tuỳ chọn này sẽ đi "
+"vòng thiết lập fontconfig trên toàn hệ thống và cho phép ứng dụng dùng phông "
+"chữ WenQuanYi mà không ảnh hưởng đến phông chữ mẫu ảnh khác."

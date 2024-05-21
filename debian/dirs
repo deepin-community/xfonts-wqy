@@ -1,0 +1,4 @@
+etc/fonts/conf.avail/
+etc/fonts/conf.d/
+etc/X11/fonts/misc/
+usr/share/fonts/X11/misc/

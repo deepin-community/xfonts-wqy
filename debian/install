@@ -1,0 +1,4 @@
+#! /usr/bin/dh-exec
+*.pcf usr/share/fonts/X11/misc
+fonts.alias => etc/X11/fonts/misc/xfonts-wqy-1.alias
+85-wqy-bitmapsong.conf => etc/fonts/conf.avail/85-xfonts-wqy-1.conf
